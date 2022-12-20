@@ -2,8 +2,29 @@ header {
   /* height: 400px;  */
   width: 100%;
   background-image: url("https://www.transparenttextures.com/patters/escheresque.png");
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; 
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1024px) {
+  .head {
+    margin-top: 0.5em;
+    margin-left: 2em;
+    width: 100px
+  }
+
+  .body {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .profile-header {
+    margin: 50px;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 100px;
+  }
 }

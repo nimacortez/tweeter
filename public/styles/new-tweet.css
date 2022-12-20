@@ -1,24 +1,24 @@
 .new-tweet {
   display: flex;
   flex-direction: column;
-  font-family: “Source Sans Pro” , sans-serif;
+  font-family: “Source Sans Pro”, sans-serif;
   font-size: 20px;
 }
 
 .button {
   display: flex;
-  background-color:#4056A1 ;
+  background-color: #4056A1;
   font-family: "Bungee";
   color: #ffffff;
 }
 
 #tweet-text {
-  width:100%;
+  width: 100%;
   outline: none;
   border: none;
   border-bottom-style: solid;
   border-bottom-width: 5px;
-  background-color: #f4f1ec ;
+  background-color: #f4f1ec;
 }
 
 .sendtweet {
@@ -26,12 +26,43 @@
   justify-content: space-between;
 }
 
-.counter { 
-  display: flex; 
-  font-family: "Bungee"; 
-  justify-content: flex-end; 
+.counter {
+  display: flex;
+  font-family: "Bungee";
+  justify-content: flex-end;
 }
 
 .counter-overlimit {
-  color: red; 
+  color: red;
+}
+
+.error1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 2px solid red;
+  color: red;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.error2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 2px solid red;
+  background-color: white;
+  color: red;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+@media only screen and (min-width:1024px) {
+  .new-tweet {
+    width: 100%;
+  }
 }

@@ -6,7 +6,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -19,13 +22,13 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro';
-  display: flex; 
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
   justify-content: center;
-  width: 90%; 
+  width: 90%;
   margin: auto;
   background-color: #f4f1ec;
 }
@@ -35,16 +38,53 @@ body {
   margin-right: auto;
   margin-bottom: 0.5em;
   width: 90%;
-  display: flex;
-  flex-direction: column; 
 }
 
-article {
-  align-items: column;
-  width: 90%;
-  margin: auto;
+article footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+article footer div {
+  display: flex;
+  flex-direction: row;
+}
+
+article header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+article header span {
+  display: flex;
+}
+
+article header span img {
+  width: 50px;
+  height: 50px;
+}
+
+article div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
 }
 
 article:hover {
-  box-shadow: 5px 10px;
+  box-shadow: 5px 5px 5px 5px;
+  color: #4fff4c
+}
+
+article:hover footer div {
+  visibility: visible;
+}
+
+article:hover header h3 {
+  color: grey;
+  font-weight: 600;
 }
