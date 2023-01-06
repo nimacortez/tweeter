@@ -40,6 +40,12 @@ body {
   width: 90%;
 }
 
+article {
+  border: solid; 
+  border-color: rgb(202, 196, 196); 
+  border-width: 5px; 
+}
+
 article footer {
   display: flex;
   flex-direction: row;
@@ -73,6 +79,11 @@ article div {
   align-items: center;
   justify-content: center;
   margin: 1em;
+}
+
+article i:hover {
+  box-shadow: 2px 2px 2px 2px;
+  color: #ce1717
 }
 
 article:hover {
