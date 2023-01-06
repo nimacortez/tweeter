@@ -6,8 +6,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(134, 36, 134, 0.769)
-  background-position: center; 
+  background-color: rgba(223, 120, 223, 0.769)
 }
 
 @media only screen and (min-width: 1024px) {
